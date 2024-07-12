@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Amazon |</title>
+            <!-- Favicon Link -->
+            <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+            <link rel="manifest" href="favi/site.webmanifest">
+            <link rel="mask-icon" href="favi/safari-pinned-tab.svg" color="#5bbad5">
+            <meta name="msapplication-TileColor" content="#da532c">
+            <meta name="theme-color" content="#ffffff">
+    <style>
+        /* Header 1 */
+        .flex-container{
+           display: flex;   
+           width: 100%;
+           height: 70px;
+           background-color:#131921 ;
+           color: white;
+            /* padding: 5px; */
+        }
+        #amazon-1{
+            /* padding: 3px; */
+            margin-top: 5px;
+            align-items: center;
+        }
+        #amazon-1:hover {
+            border: 1px solid white;
+        }
+        #local{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 12px;
+            color: white;
+            margin-top: 15px;
+            
+        }
+        #local:hover{
+            border: 2px solid white;
+        }
+
+        .nav-search{
+        display: flex;
+        justify-content: space-evenly;
+        width: 780px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 30px;
+        }
+        .search-select{
+        background-color: #f3f3f3;
+        width: 50px;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: none;
+        }
+        .search-select option {
+        text-align: left;
+        }
+        .search-input{
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+        }
+        .search-icon{
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        background-color: #febd68;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: #0f1111;
+        }
+
+        .nav-search:hover{
+        border: 1.5px solid #febd68;
+        }
+        .flex-container1{
+        padding: 20px;
+        float: inline-end;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        /* margin: 50px; */
+        }
+        #cart{
+            float: inline-end;
+            margin: 10px;
+            padding: 0px;
+            align-items: center;
+            font-size: 15px;
+        }
+        #cart:hover{
+            border: 2px solid white;
+        }
+        #return{
+            margin: 10px;
+            font-size: 15px;
+        }
+        #return:hover{
+            border: 2px solid white;
+        }
+       #Hello{
+            margin: 10px;
+            font-size: 15px;
+       }
+       #Hello:hover{
+            border: 2px solid white;
+        }
+
+       body{
+        margin: 0px;
+        /* background-size: 30px 30px; */
+        color: white;
+        }
+
+        /* Header 2 */
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #222e3d;
+            overflow: 0;
+
+        }
+        ul li a{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        li{
+            float: left;
+        }
+        li a, .dropDown-btn{
+            display: inline-block;
+            color: white;
+            background-color: #222e3d;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        li a:hover , .dropDown:hover , .dropDown-cnt:hover{
+            background-color:#5e6c7e;
+        }
+        li.dropDown{
+
+            display: inline-block;
+        }
+        .dropDown-cnt{
+            display: none;
+            min-width: 150px;
+
+            box-shadow: 10px;  
+            position: absolute;
+
+        }
+        .dropDown-cnt a{
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropDown:hover  .dropDown-cnt{
+            display: block;
+        }
+
+        /* mid Content starts */
+       body{
+        background-color: #e3e6e6;
+       }
+        #mid-section{
+            width: 500px;
+            height: 500px;
+            background-color:#ffffff;
+        }
+       #mid-section{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       }
+       .flex-mid-section {
+        text-align: center;
+       }
+       .flex-mid-section div a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #3995a3;
+       }
+       .flex-mid-section img{
+            float: left ;
+            margin: 5px;
+            padding: 5px;
+        }
+        #mid-section {
+        width: 450px;
+        height: 420px;
+        background-color: #ffffff;
+        color: black;
+        text-decoration: none;
+        float: left;
+        margin-left: 10px;
+        box-shadow: #febd68;
+       }
+
+       /* Footer start */
+       .last-line {
+            width: 100%;
+            height: 40px;
+            background-color: #364659;
+            text-align: center;
+            padding-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .square2 {
+            width: 100%;
+            height: 500px;
+            background-color: #222e3d;
+            color: white;
+            padding-top: 20px;
+        }
+        #india{
+            width: 100px;
+            height: 20px;
+            border: 1px solid white;
+            border-radius: 3px;
+            margin-left: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #Language{
+            width: 100px;
+            height: 20px;
+            border: 1px solid white;
+            border-radius: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        /* footer start */
+
+        #flex-lower{
+            text-align: center;
+            width: 100%;
+            height: 300px;
+            background-color: #131921;
+            color: white;
+        }
+        table {
+            text-align: left;
+            margin: auto;
+        }
+
+        td {
+            font-size: 15px;
+            text-align: left;
+        }
+
+        td:hover {
+            text-decoration: underline;
+        }
+
+        th {
+            font-size: 15px;
+        }
+
+        .end-part {
+            text-align: center;
+            color: white;
+        }
+
+        #p1 {
+            text-decoration: none;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #logo-end {
+            display: flex;
+            margin-left: 500px;
+        }
+        #glass{
+            font-size: 13px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #head{
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <Header>
+        <div class="flex-container">
+            <div id="amazon-1">
+                <a href="index.html"><img src="amazonlog.jpg" alt="logo" width="140px" height="60px"></a>
+            </div>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="80"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" /></svg>
+                    <a href="" style="text-decoration: none;"><div id="local">Delivering to Pune 411038<b><span style="font-size: 15px;"> <br>Update Location</span></b>    
+                </div></a> 
+                
+
+            <div class="nav-search">
+                <select class="search-select">
+                <option value="https://www.amazon.in/ref=nav_logo">All </option>
+                <option value="https://www.amazon.in/ref=nav_logo">All categories</option>
+                <option value="https://www.amazon.in/deals?ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522">Deals</option>
+                <option value="https://www.amazon.in/Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522">Books</option>
+                <option value="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">Electronics</option>
+                <option value="https://www.amazon.in/s?k=furniture&i=furniture&crid=1SYMFOZGMPXI&sprefix=fur%2Cfurniture%2C245&ref=nb_sb_ss_pltr-sample-20_2_3">Furniture</option>
+                <option value="https://www.amazon.in/s?k=gift+card&crid=35VL54OKF8CRW&sprefix=Gift%2Caps%2C228&ref=nb_sb_ss_pltr-sample-20_2_4">Gift Card</option>
+                <option value="https://www.amazon.in/s?k=jewellery&crid=3TT8PPY5NLENF&sprefix=jew%2Caps%2C228&ref=nb_sb_ss_pltr-sample-20_1_3">Jewellary</option>
+                <option value="https://www.amazon.in/s?k=luggage&crid=2L9XX2MHNOLUT&sprefix=lugg%2Caps%2C232&ref=nb_sb_ss_pltr-sample-20_2_4">Luggage Bag</option>
+                <option value="https://www.amazon.in/s?k=smart+watch&crid=2T0JX71M0BXL0&sprefix=smart%2Caps%2C257&ref=nb_sb_ss_w_hit-vc-lth_smart-watch_k0_1_5">Smart Watches</option>
+                </select>
+                <input placeholder="Search amazon" class="search-input">
+                <div class="search-icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                </div>
+            </div>
+                <div class="flex-container1">
+                    <div>
+                        <img src="flag.png" alt="flag" width="20px" height="10px">EN
+                    </div>
+                </div>
+                <div id="Hello">
+                    Hello,sign in <br><span>Account & Lists<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="18"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-caret-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 10l6 6l6 -6h-12" /></svg></span><br>
+                </div>
+                <div id="return">
+                    Return <br><span>& Orders</span>
+                </div>
+                <div id="cart" style="padding: 5px;">
+                    <img src="cart.jpg" alt="" width="30px" height="30px">Cart
+                </div>
+        </div>
+        <!-- Navigation Tag -->
+        <nav> 
+            <div id="Header2">
+                <ul>
+                    <li><a href="">All</a></li>
+                    <li><a href="https://www.amazon.in/alm/storefront?almBrandId=ctnow&ref_=nav_cs_fresh">Fresh</a></li>
+                    <li><a href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">Amazon miniTV</a></li>
+                    <li><a href="https://www.amazon.in/b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3">Sell</a></li>
+                    <li><a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">Best Sellers</a></li>
+                    <li class="dropDown">
+                        <a href="" class="dropDown-btn">Laptops</a>
+                        <div class="dropDown-cnt">
+                            <div id="point"><a href="Dell.html">Dell</a></div>
+                            <div id="point"><a href="HP.html">HP</a></div>
+                            <div id="point"><a href="Lenovo.html">Lenovo</a></div>
+                            <div id="point"><a href="Asus.html">Asus</a></div>
+                            <div id="point"><a href="Apple.html">Apple</a></div>
+                        </div>
+                    </li>
+                    <li><a href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Mobile's</a></li>
+                    <li><a href="https://www.amazon.in/deals?ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522">Today's Deals</a></li>
+                    <li><a href="https://www.amazon.in/gp/browse.html?node=6648217031&ref_=nav_cs_fashion">Fashion</a></li>
+                    <li><a href="https://www.amazon.in/electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics">Electronics</a></li>
+                    <li><a href="https://www.amazon.in/amazonprime?ref_=nav_cs_primelink_nonmember">Prime</a></li>
+                    <li><a href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases">New Releases</a></li>
+                    <li><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help">Customer Service</a></li>
+                    <li class="flex-prime"><img src="header2.jpg" alt="prime" width="350px" height="38px"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </Header>
+    
+    <Section id="mid-section">
+        <div class="flex-mid-section">
+            <p><h1>Revamp your home in Style</h1></p>
+                <p>
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&node=1380374031&pd_rd_w=7fsOK&content-id=amzn1.sym.5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_p=5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_r=8TA38F4M2SZK4A33E0VT&pd_rd_wg=R6nHr& pd_rd_r=0db7aa7b-9ae3-4242-b946-9f1920ab91fa&ref_=pd_hp_d_atf_unk"><img src="Home 2 (1).jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <p>
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&node=1380442031&pd_rd_w=7fsOK&content-id=amzn1.sym.5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_p=5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_r=8TA38F4M2SZK4A33E0VT&pd_rd_wg=R6nHr&pd_rd_r=0db7aa7b-9ae3-4242-b946-9f1920ab91fa&ref_=pd_hp_d_atf_unk"><img src="Home 2(2).jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <div>
+                    <p>
+                        <span style="margin-right: 20px;">Figurines, vases & more</span> <span style="margin-left: 10px ;">Cushion covers bedsheets & more</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-mid-section">
+            <p>
+                <a href="https://www.amazon.in/b/?_encoding=UTF8&node=1380485031&pd_rd_w=7fsOK&content-id=amzn1.sym.5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_p=5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_r=8TA38F4M2SZK4A33E0VT&pd_rd_wg=R6nHr&pd_rd_r=0db7aa7b-9ae3-4242-b946-9f1920ab91fa&ref_=pd_hp_d_atf_unk"><img src="Home 2(3).jpg" alt="" width="200px" height="100px"></a>
+            </p>
+            <p>
+                <a href="https://www.amazon.in/b/?_encoding=UTF8&node=1380510031&pd_rd_w=7fsOK&content-id=amzn1.sym.5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_p=5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_r=8TA38F4M2SZK4A33E0VT&pd_rd_wg=R6nHr&pd_rd_r=0db7aa7b-9ae3-4242-b946-9f1920ab91fa&ref_=pd_hp_d_atf_unk"><img src="Home 2(4).jpg" alt="" width="200px" height="100px"></a>
+            </p>
+            <div>
+                <p>
+                    <span style="margin-right: 120px;">Lighting Solutions</span><span>Home Storage</span>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.amazon.in/b/?_encoding=UTF8&node=12414705031&pd_rd_w=4wBu9&content-id=amzn1.sym.5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_p=5ee9c7ab-e775-4634-b3ec-0a9536cbf8f8&pf_rd_r=TA9FDHM0A4NYSJV796ED&pd_rd_wg=8tlXH&pd_rd_r=1496b643-698e-416c-8c8d-7d465a5a798b&ref_=pd_hp_d_atf_unk&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522"><small style="margin-left: 10px;">Explore all</small></a>
+            </div>
+     </div><br>
+    </Section>
+    <Section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p>
+                <h1>Starting Rs.149 | Headphones</h1>
+            </p>
+                <p>
+                    <a href="https://www.amazon.in/s?k=noise&i=electronics&rh=n%3A1388921031%2Cp_n_condition-type%3A8609960031%2Cp_36%3A-200000&_encoding=UTF8&content-id=amzn1.sym.f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pd_rd_r=6409df86-6c4c-47b9-9185-3de5a796c8d8&pd_rd_w=8rq0P&pd_rd_wg=36S9x&pf_rd_p=f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pf_rd_r=Z5KRF350PME9RB28FFME&ref=pd_hp_d_atf_unk"><img src="Home 1(1).jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <p>
+                    <a href="https://www.amazon.in/s?bbn=1388921031&rh=n%3A1388921031%2Cp_89%3AboAt&_encoding=UTF8&content-id=amzn1.sym.f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pd_rd_r=6409df86-6c4c-47b9-9185-3de5a796c8d8&pd_rd_w=8rq0P&pd_rd_wg=36S9x&pf_rd_p=f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pf_rd_r=Z5KRF350PME9RB28FFME&ref=pd_hp_d_atf_unk"><img src="Home 1 (2).jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <div>
+                    <p>
+                        <span style="margin-right: 60px;">Starting Rs.649 | Noise</span> <span style="margin-left: 10px ;">Starting Rs.249 | boat</span>
+                    </p>
+                </div>
+            </div>
+        <div class="flex-mid-section">
+            <p>
+                <a href="https://www.amazon.in/s?i=electronics&bbn=1388921031&rh=n%3A1388921031%2Cp_89%3ABoult&_encoding=UTF8&content-id=amzn1.sym.f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pd_rd_r=0db7aa7b-9ae3-4242-b946-9f1920ab91fa&pd_rd_w=DXiaU&pd_rd_wg=R6nHr&pf_rd_p=f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pf_rd_r=8TA38F4M2SZK4A33E0VT&ref=pd_hp_d_atf_unk"><img src="Home 1 (3).jpg" alt="" width="200px" height="100px">
+                </p>
+            <p>
+                <a href="https://www.amazon.in/s?k=zebronics&i=electronics&rh=n%3A976419031%2Cn%3A29561348031%2Cp_89%3AZEBRONICS&_encoding=UTF8&content-id=amzn1.sym.f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pd_rd_r=0db7aa7b-9ae3-4242-b946-9f1920ab91fa&pd_rd_w=DXiaU&pd_rd_wg=R6nHr&pf_rd_p=f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pf_rd_r=8TA38F4M2SZK4A33E0VT&ref=pd_hp_d_atf_unk"><img src="Home 1 (4).jpg" alt="" width="200px" height="100px"></a>
+            </p>
+            <div>
+                <p>
+                    <span style="margin-right: 50px;">Starting Rs.349 |Boult</span><span style="margin-left: 10px;">Starting Rs.149 | Zebronics</span>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=1388921031&pd_rd_w=Ububj&content-id=amzn1.sym.f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pf_rd_p=f14c5614-6d5e-44f4-9d37-e2a9bdd184b9&pf_rd_r=TA9FDHM0A4NYSJV796ED&pd_rd_wg=8tlXH&pd_rd_r=1496b643-698e-416c-8c8d-7d465a5a798b&ref_=pd_hp_d_atf_unk"><small style="margin-left: 10px;">See all offers</small></a>
+            </div>
+     </div><br>
+    </Section>
+    <Section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p><h1>Applicance for your home | Up to 55% off</h1></p>
+                <p>
+                    <a href="https://www.amazon.in/s?bbn=81107432031&rh=n%3A81107432031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=eda395ed-61af-4526-bfd8-7165ba12b150&pd_rd_w=ruY4l&pd_rd_wg=nvps3&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=SJPZCJJVVW39TFFVZJ97&ref=pd_hp_d_atf_unk"><img src="A.C.jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <p>
+                    <a href="https://www.amazon.in/s?bbn=81107433031&rh=n%3A81107433031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=aec133e1-15dd-4322-9b1a-27b8996773fa&pd_rd_w=1Rgk5&pd_rd_wg=Js6jf&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=XYMVXJTY3YH9FSXK611D&ref=pd_hp_d_atf_unk"><img src="Fridge.jpg" alt="https://www.amazon.in/s?bbn=81107433031&rh=n%3A81107433031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=eda395ed-61af-4526-bfd8-7165ba12b150&pd_rd_w=ruY4l&pd_rd_wg=nvps3&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=SJPZCJJVVW39TFFVZJ97&ref=pd_hp_d_atf_unk" width="200px" height="100px"></a>
+                </p>
+                <div>
+                    <p>
+                        <span style="margin-right: 105px;">Air conditioners</span> <span style="margin-left: 10px ;">Refrigerators</span>
+                    </p>
+                </div>
+            </div>
+        <div class="flex-mid-section">
+            <p>
+                <a href="https://www.amazon.in/s?bbn=84514739031&rh=n%3A84514739031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=eda395ed-61af-4526-bfd8-7165ba12b150&pd_rd_w=ruY4l&pd_rd_wg=nvps3&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=SJPZCJJVVW39TFFVZJ97&ref=pd_hp_d_atf_unk"><img src="Appliances.jpg" alt="" width="200px" height="100px">
+            </p>
+            <p>
+                <a href="https://www.amazon.in/s?bbn=84514752031&rh=n%3A84514752031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=eda395ed-61af-4526-bfd8-7165ba12b150&pd_rd_w=ruY4l&pd_rd_wg=nvps3&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=SJPZCJJVVW39TFFVZJ97&ref=pd_hp_d_atf_unk"><img src="Washingmac.jpg" alt="" width="200px" height="100px"></a>
+            </p>
+            <div>
+                <p>
+                    <span style="margin-right: 100px;">Microwaves</span><span style="margin-left: 20px;">Washing Machines</span>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.amazon.in/s?bbn=84514735031&rh=n%3A84514735031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=eda395ed-61af-4526-bfd8-7165ba12b150&pd_rd_w=ruY4l&pd_rd_wg=nvps3&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=SJPZCJJVVW39TFFVZJ97&ref=pd_hp_d_atf_unk"><small style="margin-left: 10px;">See more</small></a>
+            </div>
+     </div><br>
+    </Section>
+    <section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p><h1>Automotive essentials | Up to 60% off</h1></p>
+                <p>
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=5257472031&pd_rd_w=w3Mgg&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=G587Q72XABB8S8FQTAFF&pd_rd_wg=fV7Im&pd_rd_r=8d977374-4024-4248-8599-f5b70b50cf7f&ref_=pd_hp_d_atf_unk"><img src="Cleaning accessories.jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <p>
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=5257496031&pd_rd_w=w3Mgg&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=G587Q72XABB8S8FQTAFF&pd_rd_wg=fV7Im&pd_rd_r=8d977374-4024-4248-8599-f5b70b50cf7f&ref_=pd_hp_d_atf_unk"><img src="Tyre and rim care.jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <div>
+                    <p>
+                        <span style="margin-right: 105px;">Cleaning accessories</span> <span style="margin-left: 1px ;">Tyre & rim care</span>
+                    </p>
+                </div>
+            </div>
+        <div class="flex-mid-section">
+            <p>
+                <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=5258045031&pd_rd_w=w3Mgg&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=G587Q72XABB8S8FQTAFF&pd_rd_wg=fV7Im&pd_rd_r=8d977374-4024-4248-8599-f5b70b50cf7f&ref_=pd_hp_d_atf_unk"><img src="Helmets.jpg" alt="" width="200px" height="100px">
+            </p>
+            <p>
+                <a href="https://www.amazon.in/s?bbn=21541481031&rh=n%3A21541481031%2Cp_72%3A1318477031&_encoding=UTF8&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pd_rd_r=8d977374-4024-4248-8599-f5b70b50cf7f&pd_rd_w=w3Mgg&pd_rd_wg=fV7Im&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=G587Q72XABB8S8FQTAFF&ref=pd_hp_d_atf_unk"><img src="Vaccum Cleaner.jpg" alt="" width="200px" height="100px"></a>
+            </p>
+            <div>
+                <p>
+                    <span style="margin-right: 100px;">Helmets</span><span style="margin-left: 50px;">Vacuum cleaner</span>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=4772060031&pd_rd_w=w3Mgg&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=G587Q72XABB8S8FQTAFF&pd_rd_wg=fV7Im&pd_rd_r=8d977374-4024-4248-8599-f5b70b50cf7f&ref_=pd_hp_d_atf_unk"><small style="margin-left: 10px;">See more</small>
+                </a>
+            </div>
+     </div><br>
+    </section>
+
+    <section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p>
+                <h1>Up to 60% off | Styles for women</h1>
+            </p>
+                <p>
+                    <a href="https://www.amazon.in/s?i=apparel&bbn=29945467031&rh=n%3A1571271031%2Cn%3A1953602031%2Cn%3A11400137031%2Cn%3A29945467031%2Cp_n_specials_match%3A21618256031%2Cp_85%3A10440599031%2Cp_n_feature_nineteen_browse-bin%3A11301357031&s=apparel&dc&ds=v1%3A%2BhVZPdaILyY6IoUQroogq80u3hsE0%2FFUKKfM3PNzT2c&_encoding=UTF8&content-id=amzn1.sym.74f25a9d-e850-443b-a26a-da459bed7e95&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&pd_rd_w=Q0fGW&pd_rd_wg=Z3IT4&pf_rd_p=74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_r=RS3A8MVAARYX845ARFSY&qid=1668003576&rnid=11301356031&ref=pd_hp_d_atf_unk"><img src="Women Clothing.jpg" alt="" width="200px" height="100px">
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.amazon.in/b/ref=women&handbag/?_encoding=UTF8&node=29802312031&pd_rd_w=Q0fGW&content-id=amzn1.sym.74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_p=74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><img src="Footwear.jpg" alt="" width="200px" height="100px"></a>
+                </p>
+                <div>
+                    <p>
+                        <span style="margin-right: 105px;">Women's Clothing</span> <span style="margin-left: 1px ;">Footwear+Handbags</span>
+                    </p>
+                </div>
+            </div>
+        <div class="flex-mid-section">
+            <p>
+                <a href="https://www.amazon.in/s/ref=mega_sv_s23_1_3_1_1/?_encoding=UTF8&rh=i%3Awatches%2Cn%3A2563505031&ie=UTF8&lo=watches&pd_rd_w=Q0fGW&content-id=amzn1.sym.74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_p=74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><img src="watches.jpg" alt="" width="200px" height="100px"></a>
+            </p>
+            <p>
+                <a href="https://www.amazon.in/ref=fj/b/?_encoding=UTF8&node=5210079031&pd_rd_w=Q0fGW&content-id=amzn1.sym.74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_p=74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><img src="Fashion jewellery.jpg" alt="" width="200px" height="100px"></a>
+            </p>
+            <div>
+                <p>
+                    <span style="margin-right: 100px;">Watches</span><span style="margin-left: 50px;">Fashion jewellery</span>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.amazon.in/b/ref=sl_gw_feb20/?_encoding=UTF8&node=6648217031&pd_rd_w=Q0fGW&content-id=amzn1.sym.74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_p=74f25a9d-e850-443b-a26a-da459bed7e95&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><small style="margin-left: 10px;">End of season sale</small>
+                </a>
+            </div>
+     </div><br>
+    </section>
+
+    <section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p><h1>Up to 60% off | Professional tools</h1></p>
+                <p><a href="https://www.amazon.in/s/?_encoding=UTF8&rh=i%3Aindustrial%2Cn%3A12109315031&ie=UTF8&pd_rd_w=ZbH4W&content-id=amzn1.sym.adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_p=adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><img src="Professional tools.jpg" alt="" width="200px" height="100px"></a></p>
+                <p><a href="https://www.amazon.in/s/?_encoding=UTF8&rh=i%3Aindustrial%2Cn%3A6395912031&ie=UTF8&pd_rd_w=ZbH4W&content-id=amzn1.sym.adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_p=adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><img src="Measuring instrument.jpg" alt="" width="200px" height="100px"></a></p>
+                <div><p><span style="margin-right: 105px;">Professional tools</span> <span style="margin-left: 1px ;">Measuring instruments</span></p></div>
+            </div>
+        <div class="flex-mid-section">
+            <p><a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=21955490031&pd_rd_w=ZbH4W&content-id=amzn1.sym.adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_p=adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><img src="Cleaning supplies.jpg" alt="" width="200px" height="100px"></a></p>
+            <p><a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=27361229031&pd_rd_w=ZbH4W&content-id=amzn1.sym.adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_p=adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><img src="Mrdical supplies.jpg" alt="" width="200px" height="100px"></a></p>
+            <div><p><span style="margin-right: 100px;">Cleaning supplies</span><span style="margin-left: 50px;">Medical supplies</span></p></div>
+            <div><a href="https://www.amazon.in/b/ref=MOREPC/?_encoding=UTF8&ie=UTF8&node=5866078031&pd_rd_w=ZbH4W&content-id=amzn1.sym.adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_p=adda1da9-66c3-401c-98d9-7123606eaadd&pf_rd_r=RS3A8MVAARYX845ARFSY&pd_rd_wg=Z3IT4&pd_rd_r=83f0cb6c-e2fd-44f7-b885-75e0dadab99b&ref_=pd_hp_d_atf_unk"><small style="margin-left: 10px;">See more</small></a></div>
+     </div><br>
+    </section>
+
+    <section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p><h1>Starting Rs99 | Home improvement</h1></p>
+                <p><a href="https://www.amazon.in/s?k=cleaning+supplies&rh=n%3A3704992031%2Cp_n_pct-off-with-tax%3A2665399031&_encoding=UTF8&content-id=amzn1.sym.8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pd_rd_r=fe3101ed-c3a9-45dd-948c-698bc8997bb0&pd_rd_w=vb4Ts&pd_rd_wg=iBG3x&pf_rd_p=8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pf_rd_r=72RWEN794E7J7SWM0AJA&ref=pd_hp_d_atf_unk"><img src="Spin mops,wipes.jpg" alt="" width="200px" height="100px"></a></p>
+                <p><a href="https://www.amazon.in/s?k=bathroom+hardware+and+accessories&rh=n%3A3704992031%2Cp_n_pct-off-with-tax%3A2665399031&_encoding=UTF8&content-id=amzn1.sym.8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pd_rd_r=d28a2c96-2f72-4fe9-b2c2-f92c265a6c4f&pd_rd_w=00Pk9&pd_rd_wg=F6lEY&pf_rd_p=8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pf_rd_r=4J8KFZJBC5GVVRZ9TMFT&ref=pd_hp_d_atf_unk"><img src="Bathroom.jpg" alt="" width="200px" height="100px"></a></p>
+                <div><p><span style="margin-right: 5px;">Spin mops, wiper & more</span> <span style="margin-left: 30px ;">Bathroom hardware & accessories</span></p></div>
+            </div>
+        <div class="flex-mid-section">
+            <p><a href="https://www.amazon.in/s?k=hand+tools&rh=n%3A3704992031%2Cp_n_pct-off-with-tax%3A2665399031&_encoding=UTF8&content-id=amzn1.sym.8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pd_rd_r=d28a2c96-2f72-4fe9-b2c2-f92c265a6c4f&pd_rd_w=00Pk9&pd_rd_wg=F6lEY&pf_rd_p=8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pf_rd_r=4J8KFZJBC5GVVRZ9TMFT&ref=pd_hp_d_atf_unk"><img src="Hammers,.jpg" alt="" width="200px" height="100px"></a></p>
+            <p><a href="https://www.amazon.in/s?k=electricals&rh=n%3A3704992031%2Cp_72%3A1318477031%2Cp_n_pct-off-with-tax%3A2665399031&_encoding=UTF8&content-id=amzn1.sym.8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pd_rd_r=d28a2c96-2f72-4fe9-b2c2-f92c265a6c4f&pd_rd_w=00Pk9&pd_rd_wg=F6lEY&pf_rd_p=8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pf_rd_r=4J8KFZJBC5GVVRZ9TMFT&ref=pd_hp_d_atf_unk"><img src="Extension boards.jpg" alt="" width="200px" height="100px"></a></p>
+            <div><p><span style="margin-right: 5px;">Hammers, screwdrivers & more</span><span style="margin-left: 30px;">Extension boards, plugs & more</span></p></div>
+            <div><a href="https://www.amazon.in/b/?_encoding=UTF8&node=4286640031&pd_rd_w=X7Cdu&content-id=amzn1.sym.8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pf_rd_p=8844e7df-0ffd-4ead-86ea-172bfc8bb1a0&pf_rd_r=A1BJ9NWA1PQWW2PMSQAH&pd_rd_wg=LwPxS&pd_rd_r=1a530f5d-cab2-49a4-96b4-bf0973acfa32&ref_=pd_hp_d_atf_unk"><small style="margin-left: 10px;">Explore all</small></a></div>
+     </div><br>
+    </section>
+
+    <section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p><h1>Up to 60% off | Top picks</h1></p>
+                <p><a href="https://www.amazon.in/s?i=fashion&rh=n%3A22371749031%2Cp_72%3A1318477031%2Cp_36%3A60000-%2Cp_n_feature_nineteen_browse-bin%3A11301363031&s=shoe&dc&fs=true&ds=v1%3Al8JPi25PB7TFRMjZXhBSVc0KA1Abkc1yMFs9s6HG8wc&_encoding=UTF8&content-id=amzn1.sym.ad3626d2-c607-4183-8608-c76aba218f5d&pd_rd_r=d1021223-85b7-4a7d-8f34-df5f885ee916&pd_rd_w=zyQe0&pd_rd_wg=C24r7&pf_rd_p=ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_r=X6G8Z6SN0FA9NRZH4Y9M&qid=1713510673&rnid=11301362031&ref=pd_hp_d_btf_unk"><img src="Sports shoes.jpg" alt="" width="200px" height="100px"></a></p>
+                <p><a href="https://www.amazon.in/b/?_encoding=UTF8&node=5210079031&pd_rd_w=zyQe0&content-id=amzn1.sym.ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_p=ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_r=X6G8Z6SN0FA9NRZH4Y9M&pd_rd_wg=C24r7&pd_rd_r=d1021223-85b7-4a7d-8f34-df5f885ee916&ref_=pd_hp_d_btf_unk"><img src="Jewellery & accessories.jpg" alt="" width="200px" height="100px"></a></p>
+                <div><p><span style="margin-right: 15px;">Sports shoes</span> <span style="margin-left: 95px ;">Jewellary & accessories</span></p></div>
+            </div>
+        <div class="flex-mid-section">
+            <p><a href="https://www.amazon.in/b/?_encoding=UTF8&node=27054253031&pd_rd_w=zyQe0&content-id=amzn1.sym.ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_p=ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_r=X6G8Z6SN0FA9NRZH4Y9M&pd_rd_wg=C24r7&pd_rd_r=d1021223-85b7-4a7d-8f34-df5f885ee916&ref_=pd_hp_d_btf_unk"><img src="Watches & smartwatches.jpg" alt="" width="200px" height="100px"></a></p>
+            <p><a href="https://www.amazon.in/b/ref=AF_WIN_bub_w_cml_t_4/?_encoding=UTF8&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=6648217031&node=13714205031&pd_rd_w=zyQe0&content-id=amzn1.sym.ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_p=ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_r=X6G8Z6SN0FA9NRZH4Y9M&pd_rd_wg=C24r7&pd_rd_r=d1021223-85b7-4a7d-8f34-df5f885ee916&ref_=pd_hp_d_btf_unk"><img src="Bags, wallets & luggage.jpg" alt="" width="200px" height="100px"></a></p>
+            <div><p><span>Watches & smartwatches</span><span style="margin-left: 70px;">Bags,wallets & luggage</span></p></div>
+            <div><a href="https://www.amazon.in/s/?_encoding=UTF8&bbn=56186151031&rh=n%3A6648217031%2Cn%3A56186151031&dc=&qid=1719552063&ref=lp_84749597031_ex_n_1&pd_rd_w=zyQe0&content-id=amzn1.sym.ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_p=ad3626d2-c607-4183-8608-c76aba218f5d&pf_rd_r=X6G8Z6SN0FA9NRZH4Y9M&pd_rd_wg=C24r7&pd_rd_r=d1021223-85b7-4a7d-8f34-df5f885ee916&ref_=pd_hp_d_btf_unk"><small style="margin-left: 10px;">See all Offers</small></a></div>
+     </div><br>
+    </section>
+
+    <section id="mid-section">
+        <div class="flex-mid-section"><br>
+            <p><h3>Up to 60% off | Top deals curated from stores near by</h3></p>
+                <p><a href="https://www.amazon.in/One94Store-Cute-Bunny-Nightlight-Rechargeable/dp/B0CQGHZSPQ/?_encoding=UTF8&pd_rd_w=YLvJl&content-id=amzn1.sym.63ce4b0c-73c0-4bda-a3b3-cbb074deb7ec&pf_rd_p=63ce4b0c-73c0-4bda-a3b3-cbb074deb7ec&pf_rd_r=K7GKD7YXPHSDE0Z4GF29&pd_rd_wg=H31Xk&pd_rd_r=e5ca7494-3562-43fa-8ca3-8f31078d37a8&ref_=pd_hp_d_btf_ls_gwc_pc_en2_&th=1" ><img src="Bunny.jpg" alt="" width="380px" height="250px" style="padding-left: 25px"></a></p>
+                <div><p><span style="margin-right: 5px;"><a href="https://www.amazon.in/One94Store-Cute-Bunny-Nightlight-Rechargeable/dp/B0CQGHZSPQ/?_encoding=UTF8&pd_rd_w=YLvJl&content-id=amzn1.sym.63ce4b0c-73c0-4bda-a3b3-cbb074deb7ec&pf_rd_p=63ce4b0c-73c0-4bda-a3b3-cbb074deb7ec&pf_rd_r=K7GKD7YXPHSDE0Z4GF29&pd_rd_wg=H31Xk&pd_rd_r=e5ca7494-3562-43fa-8ca3-8f31078d37a8&ref_=pd_hp_d_btf_ls_gwc_pc_en2_&th=1" ><small>One94Store Silicone Cute Bunny Night Light for Kids-Bunny LED Lamp Rabbit<br> Rs.749 M.R.P<del>Rs.1,999</del></small></a></span></p></div>
+            </div>
+    </section>
+    <footer style="margin-top: 95%;">
+    <section class="last-line">
+        <div>
+            <a href=""><small>Back to Home</small></a>
+        </div><br>
+        <section class="square2">
+            <table>
+                <tr>
+                    <th style="padding: 10px;">Get to Know <br>Us</th>
+                    <th class="navSpacer" style="width: 10%;"></th>
+                    <th>Connect with <br>Us</th>
+                    <th class="navSpacer" style="width: 10%;"></th>
+                    <th>Make Money with <br>Us</th>
+                    <th class="navSpacer" style="width: 10%;"></th>
+                    <th>Let Us Help You</th>
+                    <th class="navSpacer" style="width: 10%;"></th>
+                </tr>
+        </section>
+        <tr>
+            <td style="padding: 10px;"><a href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer">About Us</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/redirect.html/ref=footer_fb?location=http://www.facebook.com/AmazonIN&token=2075D5EAC7BB214089728E2183FD391706D41E94&6">Facebook</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C">Sell on Amazon</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=GDFU3JS5AL6SYHRD&ref_=footer_covid">COVID-19 and Amazon</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        <tr>
+            <td style="padding: 10px;"><a href="https://amazon.jobs/en/">Careers</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/redirect.html/ref=footer_twitter?location=http://twitter.com/AmazonIN&token=A309DFBFCB1E37A808FF531934855DC817F130B6&6">Twitter</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/b/?node=16192220031&ref_=map_1_b2b_GW_FT">Sell under Amazon Accelerator</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/css/homepage.html?ref_=footer_ya">Your Account</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        <tr>
+            <td style="padding: 10px;"><a href="https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer">Press Releases</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/redirect.html?location=https://www.instagram.com/amazondotin&token=264882C912E9D005CB1D9B61F12E125D5DF9BFC7&source=standards">Instagram</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT">Protect and Build Your Brand</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fspr%2Freturns%2Fhomepage%2Fhomepage.html%3Fref_%3Dfooter_hy_f_4&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_psr_desktop_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Return Center</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        <tr>
+            <td style="padding: 10px;"><a href="https://www.amazon.science/">Amazon Science</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://sell.amazon.in/grow-your-business/amazon-global-selling?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1">Amazon Global Selling</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=3600&openid.return_to=https%3A%2F%2Famazon.in%2Fyour-product-safety-alerts%3Fref_%3Dfooter_bsx_ypsa&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_yourrecalls_in&openid.mode=checkid_setup&language=en_IN&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Recalls and Product Safety Alerts</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        <tr>
+            <td style="padding: 20px;"></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc">Become an Affiliate</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc">100% Purchase Protection</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        <tr>
+            <td style="padding: 20px;"></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://sell.amazon.in/sell-online/fulfillment-by-amazon?ref_=asin_soa_rd&ld=AWRGINFBAfooter">Fulfilment by Amazon</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/browse.html?node=6967393031&ref_=footer_mobapp">Amazon App Download</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        <tr>
+            <td style="padding: 20px;"></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://advertising.amazon.com/en-gb?ref=Amz.in">Advertise Your Products</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he">Help</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        <tr>
+            <td  style="padding: 20px;"></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+            <td><a href="https://www.amazon.in/amazonpay/home">Amazon Pay on Merchants</a></td>
+            <th class="navSpacer" style="width: 8px;"></th>
+        </tr>
+        </table>
+        <hr>
+        <div id="logo-end" style="margin-top: 40px;">
+            <a href="index.html"><img src="footer logo.jpg" alt="" width="120px" height="50px"
+                style="margin-bottom: 10px;margin-right: 50px;"></a>
+                <div id="Language" style="padding: 6px;">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="13"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>English
+                    </div>
+                    <div id="india" style="padding: 6px;">
+                        <img src="images_india.png" alt="" width="15px" height="10px" style="margin-right: 10px;">India
+                    </div>
+                    
+        </div>
+    </section>
+
+    
+        <div id="flex-lower">
+            <table><br><br>
+                <tr>
+                    <th id="head"><a href="https://www.abebooks.com/">AbeBooks</a></th>
+                    <th class="navSpacer" style="width: 110px;"></th>
+                    <th id="head"><a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter">Amazon Web Services</a></th>
+                    <th class="navSpacer" style="width: 80px;"></th>
+                    <th id="head"><a href="https://www.audible.in/">Audible</a></th>
+                    <th class="navSpacer" style="width: 100px;"></th>
+                    <th id="head"><a href="https://www.imdb.com/">IMDb</a></th>
+                    <th class="navSpacer" style="width: 110px;"></th>
+                </tr>
+                <tr>
+                    <td id="glass"><a href="https://www.abebooks.com/">Book,art <br>& collectibles</a></td>
+                    <th class="navSpacer" style="width:  90px;"></th>
+                    <td id="glass"><a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter">Scalable Cloud<br>Computing Services</a></td>
+                    <th class="navSpacer" style="width: 80px;"></th>
+                    <td id="glass"><a href="https://www.audible.in/">Download <br>Audio Books</a></td>
+                    <th class="navSpacer" style="width: 80px;"></th>
+                    <td id="glass"><a href="https://www.imdb.com/">Movies,TV <br>& Celebrities</a></td>
+                    <th class="navSpacer" style="width: 90px;"></th>
+                </tr>
+            </table><br><br>
+            <table>
+                <tr>
+                    <th id="head"><a href="https://www.shopbop.com/">Shopbop</a></th>
+                    <th class="navSpacer" style="width: 100px;"></th>
+                    <th id="head"><a href="https://www.amazon.in/l/21102587031?ref=footer_aingw">Amazon Business</a></th>
+                    <th class="navSpacer" style="width: 100px;"></th>
+                    <th id="head"><a href="https://www.amazon.in/l/8557209031?ref=footer_amznow">Prime Now</a></th>
+                    <th class="navSpacer" style="width: 60px;"></th>
+                    <th id="head"><a href="https://www.amazon.in/music/prime?ref=footer_apm">Amazon Prime Music</a></th>
+                    <th class="navSpacer" style="width: 0px;"></th>
+                </tr>
+                <tr>
+                    <td id="glass"><a href="https://www.shopbop.com/">Designer <br>Fashion Brands</a></td>
+                    <th class="navSpacer" style="width: 40px;"></th>
+                    <td id="glass"><a href="https://www.amazon.in/l/21102587031?ref=footer_aingw">Everything For <br>Your Business</a></td>
+                    <th class="navSpacer" style="width: 60px;"></th>
+                    <td id="glass"><a href="https://www.amazon.in/l/8557209031?ref=footer_amznow"></a>2-Hour Delivery <br>on Everyday Items</a></td>
+                    <th class="navSpacer" style="width: 60px;"></th>
+                    <td id="glass"><a href="https://www.amazon.in/music/prime?ref=footer_apm">100 million songs, ad-free <br>Over 15 million podcast episodes</a></td>
+                    <th class="navSpacer" style="width: 40px;"></th>
+                </tr>
+
+            </table><br><br>
+            <div class="copywrite">
+                <a href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou"><Small>
+                        <p class="end-part">Conditions of Use & <span style="word-spacing: 10px;">Sale</a> <a
+                    href="https://www.amazon.in/gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy">Privacy</span>
+                    <span style="word-spacing: 10px;">Notice </a> <a
+                    href="https://www.amazon.in/gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba"></span>Interest-Based
+                    Ads</a> <br> &copy; 1996-2024,Amazon.com,Inc. or its affiliates</small></p>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
